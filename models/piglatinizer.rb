@@ -1,11 +1,11 @@
 class PigLatinizer 
 
   def piglatinize(str)
-    a = str.split(" ")
-    b = a.map do |word|
+    split_str_array = str.split(" ")
+    piglatinized = split_str_array.map do |word|
       piglatinize_word(word)
     end
-    b.join(" ")
+    piglatinized.join(" ")
   end
 
   def piglatinize_word(word)
